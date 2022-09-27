@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body{
+  background: #ddd;
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+.App{
+  margin: 10px;
+  padding: 5px;
+}
+.todos{
+  display: flex;
+  flex-wrap:wrap ;
+}
+
+.todo{
+  background: #fff;
+  flex-basis: 48%;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
