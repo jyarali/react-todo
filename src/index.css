@@ -35,3 +35,22 @@ body{
   margin: 10px;
   padding: 10px;
 }
+
+.addtodo input{
+    border: 1px solid #484848;
+    padding: 5px;
+    margin: 5px;
+    color: #333;
+    display: inline-block;
+}
+
+.btn{
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    background: #607d8b;
+    color: #ffff;
+    border: 1px solid #131d22;
+    border-radius: 3px;
+}
