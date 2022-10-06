@@ -1,9 +1,10 @@
 function Todo(props) {
   function remove() {
-    console.log("deleted");
+    const elm = document.getElementById("todo-" + props.id);
+    elm.remove();
   }
   return (
-    <div className="todo">
+    <div className="todo" id={`todo-${props.id}`}>
       <h2>{props.title}</h2>
       <div className="todo-body">{props.text}</div>
       <div className="actions">
