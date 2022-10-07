@@ -1,43 +1,45 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-body{
+body {
   background: #ddd;
   margin: 0;
   padding: 0;
 }
-*{
+* {
   box-sizing: border-box;
 }
-.heading{
+.heading {
   width: 100%;
   text-align: center;
   font-size: 2.2rem;
   margin: 7px;
 }
-h1,h2,h3{
+h1,
+h2,
+h3 {
   margin: 3px 0;
   color: #06547a;
 }
-.App{
+.App {
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin: 10px;
   padding: 5px;
 }
-.container{
+.container {
   width: 100%;
   /* height: 100vh; */
   display: flex;
@@ -45,24 +47,22 @@ h1,h2,h3{
   align-items: flex-start;
   padding-top: 1rem;
 }
-.TaskContainer{
+.TaskContainer {
   width: 40rem;
 }
-.todos{
+.todos {
   border-radius: 0.3rem;
-    background-color: rgb(204, 204, 205);
-    width: 100%;
-    height: 24rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    overflow-y: auto;
+  background-color: rgb(204, 204, 205);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.todo{
+.todo {
   background: #fff;
   width: 100%;
   margin: 10px;
@@ -70,10 +70,10 @@ h1,h2,h3{
   border-radius: 5px;
 }
 
-.todo-body{
+.todo-body {
   margin: 15px 0;
 }
-.addtodo{
+.addtodo {
   display: block;
   width: 100%;
   padding: 10px;
@@ -81,22 +81,22 @@ h1,h2,h3{
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-.addtodo input{
-    border: 1px solid #484848;
-    padding: 5px;
-    margin: 5px 5px 5px 0;
-    color: #333;
-    display: inline-block;
-    border-radius: 3px;
+.addtodo input {
+  border: 1px solid #484848;
+  padding: 5px;
+  margin: 5px 5px 5px 0;
+  color: #333;
+  display: inline-block;
+  border-radius: 3px;
 }
 
-.btn{
-    display: block;
-    cursor: pointer;
-    padding: 6px 26px;
-    margin: 5px 0;
-    background: #607d8b;
-    color: #ffff;
-    border: 1px solid #131d22;
-    border-radius: 3px;
+.btn {
+  display: block;
+  cursor: pointer;
+  padding: 6px 26px;
+  margin: 5px 0;
+  background: #607d8b;
+  color: #ffff;
+  border: 1px solid #131d22;
+  border-radius: 3px;
 }
