@@ -19,6 +19,10 @@ body{
 *{
   box-sizing: border-box;
 }
+h1,h2,h3{
+  margin: 3px 0;
+  color: #06547a;
+}
 .App{
   margin: 10px;
   padding: 5px;
@@ -30,25 +34,37 @@ body{
 
 .todo{
   background: #fff;
-  flex-basis: 48%;
-  width: 100%;
+  width: calc(50% - 20px);
   margin: 10px;
   padding: 10px;
+  border-radius: 5px;
 }
 
+.todo-body{
+  margin: 15px 0;
+}
+.addtodo{
+  display: block;
+  width: 100%;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
 .addtodo input{
     border: 1px solid #484848;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 5px 5px 0;
     color: #333;
     display: inline-block;
+    border-radius: 3px;
 }
 
 .btn{
     display: block;
     cursor: pointer;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 0;
     background: #607d8b;
     color: #ffff;
     border: 1px solid #131d22;
