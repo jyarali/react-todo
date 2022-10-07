@@ -1,27 +1,33 @@
 import Todo from "./components/Todo";
 import AddTodo from "./components/AddTodo";
 import { useState } from "react";
+import uniqid from "uniqid";
 
 function App() {
-  const [newId, setNewId] = useState(1);
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("react-todo"))?.todos || []);
+
   function handleRemove(id) {
     const del = window.confirm("Are you Sure?");
     if (del) {
-      setTodos(todos.filter((item) => item.id !== id));
+      const newTodos = todos.filter((item) => item.id !== id);
+      setTodos(newTodos);
+      localStorage.setItem("react-todo", JSON.stringify({ todos: newTodos }));
     }
   }
+
   function handleAdd(title, text) {
-    setNewId(newId + 1);
-    setTodos([
+    const newTodos = [
       ...todos,
       {
-        id: newId,
+        id: uniqid(),
         title: title,
         text: text,
       },
-    ]);
+    ];
+    setTodos(newTodos);
+    localStorage.setItem("react-todo", JSON.stringify({ todos: newTodos }));
   }
+
   const listTodos = todos.map((todo) => (
     <Todo
       key={todo.id}
@@ -31,6 +37,7 @@ function App() {
       handleRemove={handleRemove}
     />
   ));
+
   return (
     <div className="App">
       <h1>My Todos</h1>
