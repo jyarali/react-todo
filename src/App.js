@@ -30,11 +30,15 @@ function App() {
   ));
   return (
     <div className="App">
-      <h1>My Todos</h1>
-      <div className="todos">{listTodos}</div>
-      <hr />
-      <h2>add Todo</h2>
-      <AddTodo handleAdd={handleAdd} />
+      <h1 className="heading">My Todos</h1>
+      <div className="container">
+        <div className="TaskContainer">
+          <h2>Add Todo</h2>
+          <AddTodo className="addtodo" handleAdd={handleAdd} />
+          <hr />
+          <div className="todos">{listTodos}</div>
+        </div>
+      </div>
     </div>
   );
 }
