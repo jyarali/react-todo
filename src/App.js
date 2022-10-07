@@ -6,7 +6,10 @@ function App() {
   const [newId, setNewId] = useState(1);
   const [todos, setTodos] = useState([]);
   function handleRemove(id) {
-    setTodos(todos.filter((item) => item.id !== id));
+    const del = window.confirm("Are you Sure?");
+    if (del) {
+      setTodos(todos.filter((item) => item.id !== id));
+    }
   }
   function handleAdd(title, text) {
     setNewId(newId + 1);
